@@ -10,5 +10,6 @@ git clone https://github.com/shurick81/learning-kubernetes c:\projects\learning-
 
 ## Perform Labs
 
-- [Install Kubernetes Cluster](./labs/00%20-%20install%20the%20cluster/README-Windows.md)
+- [00 - Install Kubernetes Cluster](./labs/00-install-the-cluster/README-Windows.md)
+
 
