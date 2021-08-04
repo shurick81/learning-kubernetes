@@ -1,0 +1,4 @@
+*.pem
+*.csr
+cfssl_1.4.1_linux_amd64
+cfssljson_1.4.1_linux_amd64
