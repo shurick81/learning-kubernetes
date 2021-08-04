@@ -74,7 +74,7 @@ $env:ARM_TENANT_ID = "8b87af7d-8647-4dc7-8df4-5f69a2011bb5";
 # Deploy Using Windows
 
 ```PowerShell
-cd "C:\projects\learning-kubernetes\labs\00 - install the cluster\azure\terraform"
+cd "C:\projects\learning-kubernetes\labs\00-install-the-cluster\azure\terraform"
 Remove-Item .terraform.tfstate.lock.info -Recurse -ErrorAction Ignore
 Remove-Item terraform.tfstate -ErrorAction Ignore
 Remove-Item terraform.tfstate.backup -ErrorAction Ignore
@@ -94,7 +94,7 @@ This might take about 2-3 minutes.
 # Destroy Using Windows
 
 ```PowerShell
-cd "C:\projects\learning-kubernetes\labs\00 - install the cluster\azure\terraform"
+cd "C:\projects\learning-kubernetes\labs\00-install-the-cluster\azure\terraform"
 docker run --rm -v ${PWD}/../..:/workplace -w /workplace/azure/terraform `
     -e TF_VAR_ARM_CLIENT_ID=$env:ARM_CLIENT_ID `
     -e TF_VAR_ARM_CLIENT_SECRET=$env:ARM_CLIENT_SECRET `
@@ -107,7 +107,7 @@ docker run --rm -v ${PWD}/../..:/workplace -w /workplace/azure/terraform `
 # Taint
 
 ```
-cd "C:\projects\learning-kubernetes\labs\00 - install the cluster\azure\terraform"
+cd "C:\projects\learning-kubernetes\labs\00-install-the-cluster\azure\terraform"
 docker run --rm -v ${PWD}:/workplace -w /workplace hashicorp/terraform:light taint module.WORKER0.azurerm_linux_virtual_machine.worker
 docker run --rm -v ${PWD}:/workplace -w /workplace hashicorp/terraform:light taint module.WORKER1.azurerm_linux_virtual_machine.worker
 docker run --rm -v ${PWD}:/workplace -w /workplace hashicorp/terraform:light taint module.CONTROLLER0.azurerm_linux_virtual_machine.controller
