@@ -71,7 +71,7 @@ ARM_SUBSCRIPTION_ID="d7c7a3af-f74f-4007-845c-dcacef601c53";
 ARM_TENANT_ID="8b87af7d-8647-4dc7-8df4-5f69a2011bb5";
 ```
 
-# Deploy Using Windows
+# Deploy Using Linux
 
 ```bash
 cd ~/projects/learning-kubernetes/labs/00-install-the-cluster/azure/terraform
@@ -90,7 +90,7 @@ sudo docker run --rm -v $(pwd)/../..:/workplace -w /workplace/azure/terraform \
 
 This might take about 2-3 minutes.
 
-# Destroy Using Windows
+# Destroy Using Linux
 
 ```bash
 cd ~/projects/learning-kubernetes/labs/00-install-the-cluster/azure/terraform
